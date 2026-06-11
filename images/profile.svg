@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#86c4ff" />
+      <stop offset="100%" stop-color="#7643ff" />
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2740" />
+      <stop offset="100%" stop-color="#2f3a55" />
+    </linearGradient>
+  </defs>
+  <rect width="420" height="520" rx="40" fill="url(#bg)" />
+  <circle cx="210" cy="170" r="90" fill="#f5f7fb" opacity="0.9" />
+  <path d="M120 354c24-34 70-57 122-57s98 23 122 57c-48 37-107 56-122 56s-74-19-122-56z" fill="#f5f7fb" opacity="0.95" />
+  <path d="M154 153c11-27 43-45 74-40 25 4 45 23 54 46" fill="none" stroke="#2f3a55" stroke-width="16" stroke-linecap="round" />
+  <path d="M129 196c15 14 39 18 59 10" fill="none" stroke="#2f3a55" stroke-width="16" stroke-linecap="round" />
+  <path d="M291 196c-15 14-39 18-59 10" fill="none" stroke="#2f3a55" stroke-width="16" stroke-linecap="round" />
+  <path d="M180 150c4 22 35 24 40 0" fill="#2f3a55" />
+  <rect x="120" y="176" width="180" height="86" rx="43" fill="#f5f7fb" opacity="0.96" />
+  <path d="M107 274c-6 18-9 36-9 54 0 71 58 129 129 129s129-58 129-129c0-18-3-36-9-54" fill="url(#hair)" />
+  <ellipse cx="210" cy="166" rx="42" ry="43" fill="#2f3a55" opacity="0.18" />
+</svg>
