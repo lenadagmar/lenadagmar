@@ -90,14 +90,7 @@ textarea {
 }
 
 .site-nav a + a::before {
-  content: "";
-  display: inline-block;
-  width: 0.35rem;
-  height: 0.35rem;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  background: #5d4426;
-  vertical-align: middle;
+  display: none; /* removed separator dots */
 }
 
 .site-nav a:hover {
@@ -182,6 +175,11 @@ textarea {
   font-size: clamp(2.5rem, 3.5vw, 4.4rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
+}
+
+/* Add more space below the header before the hero content */
+.hero {
+  padding-top: 3rem;
 }
 
 .hero p {
