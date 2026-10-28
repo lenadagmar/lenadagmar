@@ -1,5 +1,7 @@
 ## Hello!
 
+Please feel free to check out my personal website currently in development: https://lenadagmar.github.io/lenadagmar/
+
 <!--
 **lenadagmar/lenadagmar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
