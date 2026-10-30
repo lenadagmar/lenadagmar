@@ -340,6 +340,30 @@ textarea {
   font-size: 1.2rem;
 }
 
+.project-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  color: var(--brown-mid);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.project-card-action::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.project-open:hover .project-card-action::after {
+  transform: translateX(3px) rotate(45deg);
+}
+
 /* =========================================================
    Project popup
    ========================================================= */
@@ -400,7 +424,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 16 / 10;
+  height: min(34vh, 300px);
+  min-height: 180px;
   background: #f5efe9;
 }
 
