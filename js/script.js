@@ -6,8 +6,10 @@ const modal = document.querySelector('.project-modal');
 
 if (modal) {
   const photo = modal.querySelector('.modal-photo');
+  const viewer = modal.querySelector('.modal-viewer');
   const title = modal.querySelector('#modal-title');
   const body = modal.querySelector('.modal-body');
+  const text = modal.querySelector('.modal-text');
   const dots = modal.querySelector('.modal-dots');
   const prev = modal.querySelector('.modal-prev');
   const next = modal.querySelector('.modal-next');
@@ -20,6 +22,8 @@ if (modal) {
     index = (i + images.length) % images.length;
     photo.src = images[index].src;
     photo.alt = images[index].alt;
+    // Blurred copy of the current photo fills any empty space around it
+    viewer.style.setProperty('--modal-bg', `url("${images[index].src}")`);
     dots.querySelectorAll('button').forEach((dot, n) => {
       dot.setAttribute('aria-selected', String(n === index));
     });
@@ -59,6 +63,7 @@ if (modal) {
 
     show(0);
     modal.showModal();
+    text.scrollTop = 0; // start each project's text at the top
     document.body.style.overflow = 'hidden';
   };
 
@@ -101,4 +106,3 @@ if (modal) {
     startX = null;
   });
 }
-
