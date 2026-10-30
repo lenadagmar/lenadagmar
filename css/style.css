@@ -220,6 +220,11 @@ textarea {
   color: var(--brown-text);
 }
 
+#about .container > p,
+#contact .contact-intro {
+  max-width: 68rem;
+}
+
 /* =========================================================
    Experience timeline
    ========================================================= */
@@ -424,8 +429,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: min(34vh, 300px);
-  min-height: 180px;
+  aspect-ratio: 16 / 10;
   background: #f5efe9;
 }
 
@@ -448,6 +452,28 @@ textarea {
 .modal-prev { left: 0.75rem; }
 .modal-next { right: 0.75rem; }
 .modal-nav[hidden] { display: none; }
+
+.modal-scroll-cue {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(255, 247, 230, 0.92);
+  color: var(--brown-mid);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  pointer-events: none;
+}
+
+.modal-scroll-cue::before {
+  content: "↓";
+  font-size: 1.4rem;
+  line-height: 1;
+}
 
 .modal-close:focus-visible,
 .modal-nav:focus-visible,
