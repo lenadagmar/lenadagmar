@@ -281,6 +281,16 @@
     color: var(--brown-accent);
   }
   
+  .timeline-card h3:has(+ .timeline-promo) {
+    margin-bottom: 0.15rem;
+  }
+  
+  .timeline-promo {
+    margin: 0 0 0.9rem;
+    color: var(--brown-text);
+    font-size: 0.95rem;
+  }
+
   .timeline-card p:last-child { margin: 0; }
   
   /* =========================================================
