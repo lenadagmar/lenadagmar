@@ -176,11 +176,11 @@
               <div class="project-details" hidden>
                 <p>
                   Business users in Mexico were translating 6000+ manufacturing documents from English to Spanish by hand.
-                  This was not secure nor efficient. I built a tool that translates the document, preserves formatting 
-                  exactly (even when word order switches), and extracts text within images. It also features a customizeable 
-                  glossary so users can give the AI predetermined translations for specific words or phrases. It's a full-stack 
+                  This was not secure nor efficient. I built a tool that translates the document, preserves formatting
+                  exactly (even when word order switches), and extracts text within images. It also features a customizeable
+                  glossary so users can give the AI predetermined translations for specific words or phrases. It's a full-stack
                   web app built in Python, with Flask and HTML/CSS/Javascript. I owned the project through initial requirements
-                  gathering to deployment in production for the Mexico team. The tool has been presented to our CIO 
+                  gathering to deployment in production for the Mexico team. The tool has been presented to our CIO
                   and will be extended to use cases for 12,000 business users across departments.
                 </p>
               </div>
@@ -202,9 +202,9 @@
                   Users were inspecting hundreds of red bubbles on pdfs and manually entering the corresponding text into Excel spreadsheets.
                   I am building a tool to read manufacturing drawing PDFs, extract text that corresponds to red "bubble"
                   labels across the page, and export the information to an excel format. The tool uses OCR to detect the bubbles
-                  on each page and draw a box around the nearby text they reference. A visual model extracts the text. 
-                  Users can visualize the boxes drawn on the pdf and add/delete/edit/resize/refresh the boxes. A comparison 
-                  feature will also be introduced to detect differences between old and revised PDFs. It's a full-stack 
+                  on each page and draw a box around the nearby text they reference. A visual model extracts the text.
+                  Users can visualize the boxes drawn on the pdf and add/delete/edit/resize/refresh the boxes. A comparison
+                  feature will also be introduced to detect differences between old and revised PDFs. It's a full-stack
                   web app built in Python, with Flask and HTML/CSS/Javascript, currently in development.
                 </p>
               </div>
@@ -225,9 +225,9 @@
               <div class="project-details" hidden>
                 <p>
                   RateMySchedule won <b>1st place in the SteelHacks Hackathon</b>. Colege students have too many factors to consider
-                  when building their class schedules. RateMySchedule delivers a "rating" to a student's 
-                  sample class schedule, by analyzing the timing between classes compared to class locations, the professor ratings 
-                  on RateMyProfessor, and the credit load. RateMySchedule helps students build a better schedule, so they won't have to 
+                  when building their class schedules. RateMySchedule delivers a "rating" to a student's
+                  sample class schedule, by analyzing the timing between classes compared to class locations, the professor ratings
+                  on RateMyProfessor, and the credit load. RateMySchedule helps students build a better schedule, so they won't have to
                   run across campus with only 10 minutes between classes, or be stuck with a poorly rated professor.
                   It's a full-stack web app built in Python with Flask and React.js, leveraging several APIs, including
                   Gemini for AI analysis, rating and summarization.
@@ -251,8 +251,8 @@
               <div class="project-details" hidden>
                 <p>
                   "Doomscrolling" can cause people to lose hours of their lives each day to a screen.
-                  DoomScroll Diary is a class project that helps users to track their screentime by app, create goals, see trends, 
-                  make diary entries, and keep streaks. It implements user login, and is built in Python, with Flask, 
+                  DoomScroll Diary is a class project that helps users to track their screentime by app, create goals, see trends,
+                  make diary entries, and keep streaks. It implements user login, and is built in Python, with Flask,
                   SQLite3, and Docker. I worked in a team of 6 using the Scrum framework for development.
                 </p>
               </div>
@@ -271,8 +271,27 @@
               </div>
               <div class="project-details" hidden>
                 <p>
-                  A simple single-page personal site detailing my experience and project work. 
+                  A simple single-page personal site detailing my experience and project work.
                   Python plus HTML/CSS and Javascript. Built with the assistance of AI coding tools, all writing is my own.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <button class="project-open" type="button" aria-haspopup="dialog">
+                <div class="project-image">
+                  <img src="images/yourehere.png" alt="" />
+                </div>
+                <h3>Spanish accent prediction model</h3>
+                <span class="project-card-action" aria-hidden="true">View project</span>
+              </button>
+              <div class="project-gallery" hidden>
+                <img src="images/noimage.png" alt="" />
+              </div>
+              <div class="project-details" hidden>
+                <p>
+                  Currently in progress - an application using a custom logistic regression model to extract pronunciation,
+                  acoustic, and prosodic features from human speech audio and predict a speaker's accent/dialect, in Spanish or French.
                 </p>
               </div>
             </article>
@@ -299,7 +318,8 @@
           </p>
           <p>
             I believe AI is best implemented thoughtfully, to support people and not
-            replace them. I apply that thinking to what I build and how I build it. 
+            replace them. I apply that thinking to what I build and how I build it.
+          </p>
         </div>
       </section>
 
@@ -323,8 +343,8 @@
     </main>
 
     <dialog class="project-modal" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
       <div class="modal-inner">
-        <button class="modal-close" type="button" aria-label="Close">&times;</button>
         <div class="modal-viewer">
           <button class="modal-nav modal-prev" type="button" aria-label="Previous photo">&#8249;</button>
           <img class="modal-photo" src="" alt="" />
@@ -345,4 +365,3 @@
     </footer> -->
   </body>
 </html>
-

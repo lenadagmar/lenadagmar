@@ -6,10 +6,9 @@ const modal = document.querySelector('.project-modal');
 
 if (modal) {
   const photo = modal.querySelector('.modal-photo');
-  const viewer = modal.querySelector('.modal-viewer');
+  const inner = modal.querySelector('.modal-inner');
   const title = modal.querySelector('#modal-title');
   const body = modal.querySelector('.modal-body');
-  const text = modal.querySelector('.modal-text');
   const dots = modal.querySelector('.modal-dots');
   const prev = modal.querySelector('.modal-prev');
   const next = modal.querySelector('.modal-next');
@@ -20,14 +19,19 @@ if (modal) {
 
   const show = (i) => {
     index = (i + images.length) % images.length;
+    // Hide the photo until the new file has decoded, so swapping between
+    // differently shaped images doesn't flash the previous one stretched.
+    photo.classList.add('is-loading');
     photo.src = images[index].src;
     photo.alt = images[index].alt;
-    // Blurred copy of the current photo fills any empty space around it
-    viewer.style.setProperty('--modal-bg', `url("${images[index].src}")`);
+    if (photo.complete) photo.classList.remove('is-loading');
     dots.querySelectorAll('button').forEach((dot, n) => {
       dot.setAttribute('aria-selected', String(n === index));
     });
   };
+
+  photo.addEventListener('load', () => photo.classList.remove('is-loading'));
+  photo.addEventListener('error', () => photo.classList.remove('is-loading'));
 
   const open = (card) => {
     images = [...card.querySelectorAll('.project-gallery img')].map((img) => ({
@@ -63,7 +67,7 @@ if (modal) {
 
     show(0);
     modal.showModal();
-    text.scrollTop = 0; // start each project's text at the top
+    inner.scrollTop = 0; // start each project at the top of the popup
     document.body.style.overflow = 'hidden';
   };
 
