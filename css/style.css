@@ -512,15 +512,13 @@
     padding: 1rem 1.75rem 1.75rem;
   }
   
-  .modal-text h3 {
-    margin: 0 0 0.6rem;
-    font-size: 1.45rem;
-    letter-spacing: -0.02em;
+  .modal-text {
+    flex: 0 0 auto;
+    padding: 1rem 1.75rem 1.75rem;
   }
   
   .modal-body p {
     margin: 0;
-    max-width: 68ch;
     color: var(--brown-text);
   }
   
