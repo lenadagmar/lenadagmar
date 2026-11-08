@@ -282,7 +282,7 @@
   }
   
   .timeline-card h3:has(+ .timeline-promo) {
-    margin-bottom: 0.15rem;
+    margin-bottom: 0rem;
   }
   
   .timeline-promo {
